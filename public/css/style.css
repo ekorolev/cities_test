@@ -1,0 +1,48 @@
+hr {
+	border-color: black;
+}
+
+.table .table-header div { 
+	background: #ddd; 
+	border-radius: 5px; 
+	padding: 5px; 
+	font-family: Times; 
+	color: #222; 
+}
+.table .table-row div { display: inline-block; }
+.table .table-col1 { width: 20%; }
+.table .table-col2 { width: 50%; }
+.table .table-col3 { width: 28%; }
+.table .table-big-text { 
+	font-size: 40; 
+	text-align: center; 
+	margin-top: 20px; 
+	margin-bottom: 0px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 40px;
+	font-family: Times;
+	color: #999;
+}
+
+.panel-header {
+	font-size: 25px;
+	background: #444;
+	color:#fff;
+	padding: 5px;
+	padding-left: 20px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.load_button {
+	text-align: center;
+	padding: 30px;
+}
+
+.panel-buttons {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}

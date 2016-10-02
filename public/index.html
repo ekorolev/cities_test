@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cities</title>
+
+	<!-- JQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Rivets -->
+	<script src="/js/rivets.bundled.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type='text/css'>
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css" type='text/css'>
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- App -->
+	<script src="/js/main.js"></script>
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+	<div class='container-fluid' id="DataJSON">
+		<div class='row'>
+			<div class='col-md-offset-2 col-lg-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+
+				<div class='load_button'>
+					<button type="button" id="LoadFromServer" class="btn btn-success btn-lg">Load data from server!</button>
+				</div>
+
+				<div id="Message" class='alert alert-success' style='display: none'>
+					<span class='text'></span>
+				</div>
+
+				<div class='panel-header'>Table editor</div>
+
+				<div class='table'>
+					<div class='table-header table-row'>
+						<div class='table-col1'>Name</div>
+						<div class='table-col2'>Value</div>
+						<div class="table-col3">Control</div>
+					</div>
+					<div class="table-big-text" rv-show="data.nodata">
+						No data
+					</div>
+					<div class='table-body'>
+						<div class="table-data table-row" rv-each-item="data.array">
+							<span class="index" rv-hide="true">{index}</span>
+							<div class="table-col1">
+								<input type="text" rv-value="item.name" class="form-control">
+							</div>
+							<div class="table-col2">
+								<input type="text" rv-value="item.value" class="form-control">
+							</div>
+							<div class="table-col3">
+								<span class="glyphicon glyphicon-arrow-up ItemUp"></span>
+								<span class="glyphicon glyphicon-arrow-down ItemDown"></span>
+								<span class="glyphicon glyphicon-remove ItemRemove"></span>	
+							</div>
+						</div>
+					</div>
+					
+					<div class='panel-buttons'>
+						<button type="button" id="SaveData" class="btn btn-success btn-lg">Save!</button>
+						<button type="button" id="RemoveData" class="btn btn-danger btn-lg">Clear!</button>
+					</div>
+
+					<br><br><br><br>
+					<div class='panel-header'>Add new item</div>
+					<div class="table-add table-row">
+						<form id='form_n_1'>
+						<div class="table-col1">
+							<input type="text" rv-value="data.new_name" class="form-control" id="Focus">
+						</div>
+						<div class="table-col2">
+							<input type="text" rv-value="data.new_value" class="form-control">
+						</div>
+						<div class="table-col3">
+							<input type="submit" class="btn btn-success" id="AddItem" rv-on-click="add" value='Add'>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
