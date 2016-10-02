@@ -10,9 +10,9 @@ hr {
 	color: #222; 
 }
 .table .table-row div { display: inline-block; }
-.table .table-col1 { width: 20%; }
-.table .table-col2 { width: 50%; }
-.table .table-col3 { width: 28%; }
+.table .table-col1 { width: 30%; }
+.table .table-col2 { width: 60%; }
+.table .table-col3 { width: 8%; }
 .table .table-big-text { 
 	font-size: 40; 
 	text-align: center; 
