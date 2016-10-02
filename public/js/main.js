@@ -125,6 +125,7 @@ $(function () {
 				}
 
 				message("Done!");
+				console.log('Counter: ', data.counter);
 			},
 			error: function (err, res, data) {
 				alert('error: fail load data from server.');

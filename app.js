@@ -1,9 +1,11 @@
 var express = require('express');
 
+var counter = 0;
 var app = express();
 
 app.get('/', function (req, res) {
 	res.sendFile(__dirname+'/public/index.html');
+	++counter;
 });
 
 app.get('/api', function (req, res) {
@@ -17,7 +19,8 @@ app.get('/api', function (req, res) {
 			{ name: 'Volgar', value: 'Astrakhan' },
 			{ name: 'Chelsea', value: 'London' },
 			{ name: 'Sporting', value: 'Lissabon' }
-		]
+		],
+		counter: counter
 	});
 });
 
