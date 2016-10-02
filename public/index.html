@@ -24,13 +24,13 @@
 	<div class='container-fluid' id="DataJSON">
 		<div class='row'>
 			<div class='col-md-offset-2 col-lg-offset-2 col-lg-8 col-md-8 col-sm-12 col-xs-12'>
-
-				<div class='load_button'>
-					<button type="button" id="LoadFromServer" class="btn btn-success btn-lg">Load data from server!</button>
-				</div>
-
-				<div id="Message" class='alert alert-success' style='display: none'>
-					<span class='text'></span>
+				<div class='info-panel'>
+					<div class='link'>
+						<a href='mailto: aksyline@gmail.com'>aksyline@gmail.com</a>
+					</div>
+					<div class='github'>
+						<a href='https://github.com/ekorolev/cities_test' target="blank">https://github.com/ekorolev/cities_test</a>
+					</div>
 				</div>
 
 				<div class='panel-header'>Table editor</div>
@@ -62,8 +62,12 @@
 					</div>
 					
 					<div class='panel-buttons'>
+						<button type="button" id="LoadFromServer" class="btn btn-success btn-lg">Load data from server!</button>
 						<button type="button" id="SaveData" class="btn btn-success btn-lg">Save!</button>
 						<button type="button" id="RemoveData" class="btn btn-danger btn-lg">Clear!</button>
+					</div>
+					<div id="Message" class='alert alert-success' style='display: none'>
+						<span class='text'></span>
 					</div>
 
 					<br><br><br><br>

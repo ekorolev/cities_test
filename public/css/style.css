@@ -37,12 +37,12 @@ hr {
 	margin-bottom: 10px;
 }
 
-.load_button {
-	text-align: center;
-	padding: 30px;
-}
-
 .panel-buttons {
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
+
+.info-panel { border-bottom: 1px solid #ddd; padding-bottom: 4px; padding-top: 4px;}
+.info-panel div { display: inline-block; }
+.info-panel div.link { text-align: left; }
+.info-panel div.github {text-align: right; float: right;}
